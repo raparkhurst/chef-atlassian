@@ -1,0 +1,21 @@
+// Should Bitbucket Server be installed as a Service? Must be ADMIN
+// (default: true if the process is running with administrator rights, false otherwise)
+// If false, the home and installation directories must be specified to point
+// to directories owned by the user
+app.install.service$Boolean=<%= node['atlassian']['bitbucket']['installService'] %>
+
+// The ports Bitbucket Server should bind to:
+// (defaults: portChoice=default, httpPort=7990, serverPort=8006)
+portChoice=<%= node['atlassian']['bitbucket']['portChoice'] %>
+httpPort=<%= node['atlassian']['bitbucket']['httpPort'] %>
+serverPort=<%= node['atlassian']['bitbucket']['serverPort'] %>
+
+// Path to the Bitbucket Server HOME directory:
+// Default: /var/atlassian/application-data/bitbucket
+// If running with administrator rights: ~/atlassian/application-data/bitbucket
+app.bitbucketHome=<%= node['atlassian']['bitbucket']['bitbucketHome'] %>
+
+// The target installation directory
+// Default: /opt/atlassian/bitbucket/<VERSION>
+// If running with administrator rights: ~/atlassian/bitbucket/<VERSION>
+app.defaultInstallDir=<%= node['atlassian']['bitbucket']['InstallDir'] %>

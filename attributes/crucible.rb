@@ -1,0 +1,6 @@
+default['atlassian']['crucible']['db_user'] = 'crucible'
+default['atlassian']['crucible']['db_name'] = 'crucible_db'
+default['atlassian']['crucible']['db_host'] = 'dbserver.example.com'
+default['atlassian']['crucible']['package'] = 'crucible-3.6.2.zip'
+default['atlassian']['crucible']['remote_url'] = 'http://www.atlassian.com/software/crucible/downloads/binary'
+default['atlassian']['crucible']['answers_file'] = ''
