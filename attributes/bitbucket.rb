@@ -26,7 +26,7 @@ default['atlassian']['bitbucket']['database_port'] = "3306"
 default['atlassian']['bitbucket']['database_user'] = 'bitbucket'
 default['atlassian']['bitbucket']['database_name'] = 'bitbucket_db'
 default['atlassian']['bitbucket']['database_host'] = 'dbserver.example.com'
-default['atlassian']['bitbucket']['version'] = "4.5.2"
+default['atlassian']['bitbucket']['version'] = "4.10.1"
 default['atlassian']['bitbucket']['package'] = "atlassian-bitbucket-#{node['atlassian']['bitbucket']['version']}-x64.bin"
 default['atlassian']['bitbucket']['remote_url'] = 'https://www.atlassian.com/software/stash/downloads/binary'
 default['atlassian']['bitbucket']['answers_file'] = 'bitbucket_answers.varfile'
@@ -40,6 +40,7 @@ default['atlassian']['bitbucket']['serverPort'] = "8006"
 default['atlassian']['bitbucket']['bitbucketHome'] = "/var/atlassian/application-data/bitbucket"
 default['atlassian']['bitbucket']['installDirRoot'] = "/opt/atlassian/bitbucket/"
 default['atlassian']['bitbucket']['InstallDir'] = "#{node['atlassian']['bitbucket']['installDirRoot']}/#{node['atlassian']['bitbucket']['version']}"
+default['atlassian']['bitbucket']['install_dir'] = "#{node['atlassian']['bitbucket']['InstallDir']}"
 
 
 # server.xml settings
